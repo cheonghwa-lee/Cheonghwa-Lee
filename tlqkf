@@ -13,51 +13,51 @@ rosdep update
 rosdep install --from-paths ros2-linux/share --ignore-src --rosdistro foxy -y --skip-keys "console_bridge fastcdr fastrtps osrf_testing_tools_cpp poco_vendor rmw_connext_cpp rosidl_typesupport_connext_c rosidl_typesupport_connext_cpp rti-connext-dds-5.3.1 tinyxml_vendor tinyxml2_vendor urdfdom urdfdom_headers"
 sudo apt install ros-foxy-desktop
 sudo apt install -y libpython3-dev python3-pip
-   16  pip3 install -U argcomplete
-   17  source /opt/ros/foxy/setup.bash 
-   18  ros2
-   19  ls
-   20  mkdir dev_ws
-   21  cd dev_ws
-   22  ls
-   23  colcon build
-   24  cd src
-   25  sudo locale-gen en_US en_US.UTF-8
-   26  sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
-   27  export LANG=en_US.UTF-8
-   28  sudo apt install python3-colcon-common-extensions
-   29  colcon build
-   30  ls
-   31  mkdir src
-   32  ls
-   33  git clone https://github.com/SNU-RTOS/scl.git
-   34  sudo apt install git
-   35  git clone https://github.com/SNU-RTOS/scl.git
-   36  git clone https://github.com/SNU-RTOS/splace_client_libraries.git
-   37  git clone https://github.com/SNU-RTOS/splace_client_library
-   38  git clone https://github.com/SNU-RTOS/splash_client_library
-   39  git clone https://github.com/SNU-RTOS/splash_client_libraries.git
-   40  ls
-   41  cd src/
-   42  ls
-   43  cd ..
-   44  mv splash_client_libraries src/
-   45  ls
-   46  cd src/
-   47  ls
-   48  mv splash_client_libraries scl
-   49  ls
-   50  git clone https://github.com/SNU-RTOS/splash_runtime_libraries.git
-   51  ls
-   52  mv splash_runtime_libraries srl
-   53  ls
-   54  cd ..
-   55  colcon build
-   56  ls
-   57  cd src/
-   58  ls
-   59  git clone https://github.com/SNU-RTOS/splash_interfaces.git
-   60  ls
-   61  cd ..
-   62  colcon build
+pip3 install -U argcomplete
+source /opt/ros/foxy/setup.bash 
+ros2
+ls
+mkdir dev_ws
+cd dev_ws
+ls
+colcon build
+cd src
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+sudo apt install python3-colcon-common-extensions
+colcon build
+ls
+mkdir src
+ls
+git clone https://github.com/SNU-RTOS/scl.git
+sudo apt install git
+git clone https://github.com/SNU-RTOS/scl.git
+git clone https://github.com/SNU-RTOS/splace_client_libraries.git
+git clone https://github.com/SNU-RTOS/splace_client_library
+git clone https://github.com/SNU-RTOS/splash_client_library
+git clone https://github.com/SNU-RTOS/splash_client_libraries.git
+ls
+cd src/
+ls
+cd ..
+mv splash_client_libraries src/
+ls
+cd src/
+ls
+mv splash_client_libraries scl
+ls
+git clone https://github.com/SNU-RTOS/splash_runtime_libraries.git
+ls
+mv splash_runtime_libraries srl
+ls
+cd ..
+colcon build
+ls
+cd src/
+ls
+git clone https://github.com/SNU-RTOS/splash_interfaces.git
+ls
+cd ..
+colcon build
 
